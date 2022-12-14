@@ -19,7 +19,6 @@ html {
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--light-gray);
-  /* font-size: 15px; */
   font-size: 1.5rem;
   color: var(--dark-blue);
   display: flex;

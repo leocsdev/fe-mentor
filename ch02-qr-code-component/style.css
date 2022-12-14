@@ -11,40 +11,45 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 0.625*16px = 10px */
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--light-gray);
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 1.5rem;
   color: var(--dark-blue);
   display: flex;
-  height: 100vh;
-
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 320px;
+  margin: 2.4rem auto;
+  max-width: 32rem;
 }
 
 .card {
   background-color: var(--white);
-  padding: 15px;
-  border-radius: 20px;
+  padding: 1.5rem;
+  border-radius: 2rem;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0 15px 40px -30px var(--grayish-blue);
 }
 
 .qr-code-image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .qr-code-container,
 .heading,
 .description {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .heading,
@@ -58,5 +63,5 @@ body {
 
 .description {
   color: var(--grayish-blue);
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }

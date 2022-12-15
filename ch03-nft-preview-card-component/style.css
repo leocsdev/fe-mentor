@@ -93,14 +93,11 @@ body {
   color: var(--white);
   font-size: 2.2rem;
   margin-bottom: 1.2rem;
-}
-
-.heading-id {
   cursor: pointer;
   transition: 0.25s ease;
 }
 
-.heading-id:hover {
+.card-heading:hover {
   color: var(--cyan);
 }
 

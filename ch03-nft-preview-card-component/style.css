@@ -144,9 +144,7 @@ body {
 
 .avatar {
   margin-right: 1.8rem;
-}
-
-.avatar img {
+  display: block;
   width: 3.2rem;
   height: 3.2rem;
   border: 1px solid var(--white);

@@ -4,6 +4,7 @@
   --very-pale-blue: #f5f7ff;
   --desaturated-blue: #7280a7;
   --dark-blue: #1f2f56;
+  --white: #fff;
 }
 
 * {
@@ -19,6 +20,8 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--desaturated-blue);
 }
 
 img {
@@ -26,15 +29,127 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+.btn--block {
+  display: block;
+}
+
+.btn--primary {
+  color: var(--white);
+  background-color: var(--bright-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
-  background: url('./images/pattern-background-mobile.svg') no-repeat center
-    center/cover;
+  /* background: url('./images/pattern-background-desktop.svg') no-repeat center
+    center/cover; */
+  background: var(--pale-blue);
+  padding: 2.4rem;
 }
 
 .card {
   width: 32.5rem;
+  background-color: var(--white);
+  margin: 0 auto;
+  padding-bottom: 3.6rem;
+  border-radius: 2rem;
+  box-shadow: 0 20px 20px 0 rgb(56, 41, 224, 0.1);
+}
+
+.card__header {
+  margin-bottom: 3.6rem;
+}
+
+.card__image {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.card__body {
+  padding: 0 2.4rem;
+}
+
+.card__title {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card__lead {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.card__title,
+.card__lead {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.card__price-container {
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.card__price-info {
+  display: flex;
+  align-items: center;
+}
+
+.card_price-image {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 2rem;
+}
+
+.card__price-title {
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.4rem;
+  font-weight: 900;
+}
+
+.card__price-change {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--bright-blue);
+}
+
+.card__footer {
+  padding-bottom: 3rem;
+  padding: 0 2.4rem;
+}
+
+.card__footer .btn--primary {
+  box-shadow: 0 16px 30px 0 rgb(56, 41, 224, 0.25);
+  margin-bottom: 2.4rem;
+}
+
+.card__cancel-link {
+  font-weight: 900;
+  text-align: center;
+  display: block;
 }
 
 .attribution {

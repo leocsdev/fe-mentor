@@ -25,28 +25,37 @@
     <main class="container">
       <section class="card">
         <header class="card__header">
-          <img src="./images/illustration-hero.svg" alt="" />
+          <img
+            src="./images/illustration-hero.svg"
+            alt=""
+            class="card__image"
+          />
         </header>
         <div class="card__body">
-          <h1>Order Summary</h1>
-          <p>
+          <h1 class="card__title">Order Summary</h1>
+          <p class="card__lead">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div>
-            <div>
-              <img src="./images/icon-music.svg" alt="" />
-              <div>
-                <p>Annual Plan</p>
-                <p>$59.99/year</p>
+          <div class="card__price-container">
+            <div class="card__price-info">
+              <img
+                src="./images/icon-music.svg"
+                alt=""
+                class="card_price-image"
+              />
+              <div class="card__price-plan">
+                <h3 class="card__price-title">Annual Plan</h3>
+                <p class="card__price">$59.99/year</p>
               </div>
-              <a href="">Change</a>
             </div>
+
+            <a href="#" class="card__price-change">Change</a>
           </div>
         </div>
         <footer class="card__footer">
-          <a href="">Proceed to Payment</a>
-          <a href="">Cancel Order</a>
+          <a href="#" class="btn btn--block btn--primary">Proceed to Payment</a>
+          <a href="#" class="card__cancel-link">Cancel Order</a>
         </footer>
       </section>
     </main>

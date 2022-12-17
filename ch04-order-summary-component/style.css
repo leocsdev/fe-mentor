@@ -55,10 +55,11 @@ a {
 .container {
   width: 100%;
   min-height: 100vh;
-  /* background: url('./images/pattern-background-desktop.svg') no-repeat center
-    center/cover; */
   background: var(--pale-blue);
   padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -134,6 +135,12 @@ a {
   font-weight: bold;
   text-decoration: underline;
   color: var(--bright-blue);
+  transition: 0.25s ease;
+}
+
+.card__price-change:hover {
+  color: #766cf1;
+  text-decoration: none;
 }
 
 .card__footer {
@@ -144,12 +151,77 @@ a {
 .card__footer .btn--primary {
   box-shadow: 0 16px 30px 0 rgb(56, 41, 224, 0.25);
   margin-bottom: 2.4rem;
+  transition: 0.25s ease;
+}
+
+.card__footer .btn--primary:hover {
+  background-color: #766cf1;
 }
 
 .card__cancel-link {
   font-weight: 900;
   text-align: center;
   display: block;
+  transition: 0.25s ease;
+}
+
+.card__cancel-link:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 501px) {
+  .container {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 50%;
+  }
+
+  .card {
+    width: 45rem;
+  }
+
+  .card__body {
+    padding: 0 5rem;
+  }
+
+  .card__header {
+    margin-bottom: 5rem;
+  }
+
+  .card__title {
+    font-size: 2.8rem;
+  }
+
+  .card__lead {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+  }
+
+  .card__price-title {
+    font-size: 1.6rem;
+  }
+
+  .card__price {
+    font-size: 1.6rem;
+  }
+
+  .card__price-change {
+    font-size: 1.4rem;
+  }
+
+  .card__price-container {
+    margin-bottom: 3rem;
+  }
+
+  .card__footer {
+    padding: 0 5rem;
+  }
+
+  .card__footer .btn--primary {
+    margin-bottom: 3rem;
+  }
 }
 
 .attribution {

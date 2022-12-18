@@ -54,7 +54,7 @@ img {
 
 .card__header {
   margin-bottom: 4rem;
-  position: relative;
+  /* position: relative; */
   background-color: rgb(170, 92, 219);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -63,7 +63,8 @@ img {
 .card__header .header__image-mobile {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  opacity: 0.5;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
 }
 
 .card__header .header__image-desktop {
@@ -145,10 +146,10 @@ img {
     display: block;
     object-fit: cover;
     height: 100%;
-
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    opacity: 0.5;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
   }
 
   .card__header .header__image-mobile {

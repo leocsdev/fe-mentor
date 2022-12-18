@@ -48,6 +48,8 @@ img {
   width: 325px;
   background-color: var(--dark-desaturated-blue);
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .card__header {
@@ -55,9 +57,13 @@ img {
   position: relative;
 }
 
-.card__header .header__image {
+.card__header .header__image-mobile {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+
+.card__header .header__image-desktop {
+  display: none;
 }
 
 .card__header .overlay {
@@ -69,12 +75,12 @@ img {
   background-color: rgb(170, 92, 219, 0.6);
 }
 
-.card__body,
+.card__description,
 .card__footer {
   padding: 0 3.2rem;
 }
 
-.card__body {
+.card__description {
   color: var(--transparent-white-2);
   margin-bottom: 4rem;
   text-align: center;
@@ -84,7 +90,7 @@ img {
   font-size: 2.8rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: var(--transparent-white-1);
+  color: var(--white);
   line-height: 1.2;
 }
 
@@ -124,4 +130,63 @@ img {
   text-transform: uppercase;
   color: var(--transparent-white-2);
   letter-spacing: 1.2px;
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    width: 100%;
+    max-width: 1110px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card__header {
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .card__header .header__image-desktop {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .card__header .header__image-mobile {
+    display: none;
+  }
+
+  .card__body {
+    padding: 7rem;
+  }
+
+  .card__description {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 6rem;
+  }
+
+  .card__title {
+    font-size: 3.6rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  .card__footer {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .card__footer .stats-info {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .stats-info__item {
+    align-items: flex-start;
+  }
+
+  .stats__companies,
+  .stats__templates,
+  .stats__queries {
+    margin-top: 1rem;
+  }
 }

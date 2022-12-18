@@ -25,11 +25,17 @@
     <main class="stats-card">
       <section class="card">
         <header class="card__header">
-          <!-- image here -->
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt=""
+            class="header__image"
+          />
+          <div class="overlay"></div>
         </header>
         <div class="card__body">
           <h1 class="card__title">
-            Get insights that help your business grow.
+            Get <span class="title__highlight">insights</span> that help your
+            business grow.
           </h1>
           <p class="card__lead">
             Discover the benefits of data analytics and make better decisions
@@ -37,9 +43,17 @@
           </p>
         </div>
         <footer class="card__footer">
-          <p>10k+ <span class="stats__companies">companies</span></p>
-          <p>314 <span class="stats__templates">templates</span></p>
-          <p>12m+ <span class="stats__queries">queries</span></p>
+          <ul class="stats-info">
+            <li class="stats-info__item">
+              10k+ <span class="stats__companies">companies</span>
+            </li>
+            <li class="stats-info__item">
+              314 <span class="stats__templates">templates</span>
+            </li>
+            <li class="stats-info__item">
+              12M+ <span class="stats__queries">queries</span>
+            </li>
+          </ul>
         </footer>
       </section>
     </main>

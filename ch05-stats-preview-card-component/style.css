@@ -1,0 +1,35 @@
+:root {
+  /* (main background) */
+  --very-dark-blue: #090b1a;
+  /* (card background) */
+  --dark-desaturated-blue: #1b1938;
+  /* (accent) */
+  --soft-violet: #aa5cdb;
+  /* (main heading, stats) */
+  --white: #fff;
+  /* (main paragraph) */
+  --transparent-white-1: rgba(255, 255, 255, 0.749);
+  /* (stat headings) */
+  --transparent-white-2: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 0.625*16px = 10px (1rem) */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}

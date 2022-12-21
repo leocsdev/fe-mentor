@@ -31,7 +31,8 @@ body {
 
 img {
   width: 100%;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .stats-card {
@@ -54,21 +55,16 @@ img {
 
 .card__header {
   margin-bottom: 4rem;
-  /* position: relative; */
   background-color: rgb(170, 92, 219);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-.card__header .header__image-mobile {
+.card__header .header__image {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   mix-blend-mode: multiply;
   opacity: 0.7;
-}
-
-.card__header .header__image-desktop {
-  display: none;
 }
 
 .card__description,
@@ -142,18 +138,10 @@ img {
     border-bottom-right-radius: 10px;
   }
 
-  .card__header .header__image-desktop {
-    display: block;
-    object-fit: cover;
-    height: 100%;
+  .card__header .header__image {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    mix-blend-mode: multiply;
-    opacity: 0.7;
-  }
-
-  .card__header .header__image-mobile {
-    display: none;
+    border-top-left-radius: 0;
   }
 
   .card__body {

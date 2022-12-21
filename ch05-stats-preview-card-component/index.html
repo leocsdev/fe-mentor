@@ -25,19 +25,17 @@
     <main class="stats-card">
       <section class="card">
         <header class="card__header">
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt=""
-            class="header__image-mobile"
-          />
-
-          <img
-            src="./images/image-header-desktop.jpg"
-            alt=""
-            class="header__image-desktop"
-          />
-
-          <div class="overlay"></div>
+          <picture>
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <img
+              src="./images/image-header-mobile.jpg"
+              alt="Several business women inside an office working."
+              class="header__image"
+            />
+          </picture>
         </header>
         <div class="card__body">
           <div class="card__description">
